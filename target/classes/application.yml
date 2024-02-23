@@ -1,0 +1,33 @@
+server:
+  port: 8091
+
+api:
+  finnhub:
+    key: "cn9br99r01qoee99vbagcn9br99r01qoee99vbb0"
+    domain: "finnhub.io"
+    path: "/api/v1"
+    endpoint: 
+      profile2: "/stock/profile2"
+      quote: "/quote"
+
+database:
+  postgres: "db_finnhub"
+
+spring:
+ datasource:
+  driverClassName: "org.hibernate.dialect.PostgreSQLDialect"
+  url: "jdbc:postgresql://localhost:5432/${database.postgres}"
+  username: "postgres"
+  password: "admin1234"
+
+spring.jpa:
+  show-sql: true
+  hibernate.ddl-auto: update 
+ 
+# https://finnhub.io/api/v1/stock/profile2
+# symbol=AAPL
+# token=cn9br99r01qoee99vbagcn9br99r01qoee99vbb0
+
+#api.finnhub.domain => "finnhub.io"
+#${api.finnhub.endpoint.quote} -> "/quote"
+
