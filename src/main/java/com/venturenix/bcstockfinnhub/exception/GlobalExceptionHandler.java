@@ -8,6 +8,18 @@ import com.venturenix.bcstockfinnhub.infra.ApiResponse;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
+
+  @ExceptionHandler(InvalidStockSymbolException.class)
+  @ResponseStatus(value = HttpStatus.BAD_REQUEST)
+  public ApiResponse<Void> InvalidStockSymbolExceptionHandler(
+      InvalidStockSymbolException ex) {
+    return ApiResponse.<Void>builder() //
+        .code(Code.INVALID_STOCK_SYMBOL.getCode()) //
+        .message(Code.INVALID_STOCK_SYMBOL.getMessage()) //
+        .data(null) //
+        .build();
+  }
+
   
    @ExceptionHandler(RestClientException.class) // catch
   @ResponseStatus(value = HttpStatus.REQUEST_TIMEOUT)

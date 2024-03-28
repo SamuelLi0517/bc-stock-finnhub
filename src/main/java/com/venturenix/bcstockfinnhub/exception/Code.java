@@ -7,6 +7,7 @@ public enum Code {
   OK("000000", "OK."), //
   NOTFOUND("000001", "Not Found."), //
   NPE_EXCEPTION("000002", "Runtime Exception"),
+  INVALID_STOCK_SYMBOL("200003","Invalid Stock Symbol."),
   GENERAL_EXCEPTION("999999", "General Exception."),
   REST_NOT_AVAILABLE("900000", "Finnhub Service is unavailable."),
   ;

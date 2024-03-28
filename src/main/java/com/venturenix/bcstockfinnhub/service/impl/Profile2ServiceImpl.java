@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.venturenix.bcstockfinnhub.entity.Profile2Entity;
+import com.venturenix.bcstockfinnhub.exception.Code;
+import com.venturenix.bcstockfinnhub.exception.RestClientException;
 import com.venturenix.bcstockfinnhub.infra.BcUtil;
 import com.venturenix.bcstockfinnhub.infra.Mapper;
 import com.venturenix.bcstockfinnhub.infra.RedisHelper;
@@ -50,6 +52,9 @@ public class Profile2ServiceImpl implements Profile2Service {
     log.info("FinnhubUrl : " + FinnhubUrl);
     Profile2 profile2 = restTemplate.getForObject(FinnhubUrl, Profile2.class);
 
+    if (profile2.getName() == null) {
+      throw new  RestClientException(Code.REST_NOT_AVAILABLE);
+    }
     return profile2;
   }
 

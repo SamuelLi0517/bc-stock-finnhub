@@ -5,6 +5,7 @@
 /Users/samuelli/bc-stock-finnhub/src/main/java/com/venturenix/bcstockfinnhub/exception/BusinessException.java
 /Users/samuelli/bc-stock-finnhub/src/main/java/com/venturenix/bcstockfinnhub/model/Quote.java
 /Users/samuelli/bc-stock-finnhub/src/main/java/com/venturenix/bcstockfinnhub/controller/Profile2Operation.java
+/Users/samuelli/bc-stock-finnhub/src/main/java/com/venturenix/bcstockfinnhub/exception/InvalidStockSymbolException.java
 /Users/samuelli/bc-stock-finnhub/src/main/java/com/venturenix/bcstockfinnhub/infra/Currency.java
 /Users/samuelli/bc-stock-finnhub/src/main/java/com/venturenix/bcstockfinnhub/BcStockFinnhubApplication.java
 /Users/samuelli/bc-stock-finnhub/src/main/java/com/venturenix/bcstockfinnhub/infra/Mapper.java

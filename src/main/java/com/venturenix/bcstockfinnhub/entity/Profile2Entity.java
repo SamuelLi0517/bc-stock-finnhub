@@ -1,6 +1,7 @@
 package com.venturenix.bcstockfinnhub.entity;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -29,7 +30,7 @@ public class Profile2Entity implements Serializable {
   public String estimateCurrency;
   public String exchange;
   public String finnhubIndustry;
-  public String ipo;
+  public LocalDate ipo;
   public String logo;
   public Double marketCapitalization;
   public String name;

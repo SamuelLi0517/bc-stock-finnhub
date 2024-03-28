@@ -1,5 +1,6 @@
 package com.venturenix.bcstockfinnhub.model;
 
+import java.time.LocalDate;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +17,7 @@ public class Profile2 {
     public String estimateCurrency;
     public String exchange;
     public String finnhubIndustry;
-    public String ipo;
+    public  LocalDate ipo;
     public String logo;
     public double marketCapitalization;
     public String name;

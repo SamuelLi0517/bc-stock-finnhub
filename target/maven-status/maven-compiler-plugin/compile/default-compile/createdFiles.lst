@@ -14,6 +14,7 @@ com/venturenix/bcstockfinnhub/infra/ApiResponse.class
 com/venturenix/bcstockfinnhub/entity/QuoteEntity.class
 com/venturenix/bcstockfinnhub/controller/impl/QuoteController.class
 com/venturenix/bcstockfinnhub/infra/RedisHelper.class
+com/venturenix/bcstockfinnhub/exception/InvalidStockSymbolException.class
 com/venturenix/bcstockfinnhub/exception/RestClientException.class
 com/venturenix/bcstockfinnhub/entity/QuoteEntity$QuoteEntityBuilder.class
 com/venturenix/bcstockfinnhub/model/Quote$QuoteBuilder.class
